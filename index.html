@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head>
+  <title>Web_Welcome~!</title>
+  <meta charset = "utf-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="colors.js">
+
+  </script>
+</head>
+<body>
+
+  <h1 id="intotheheader"><a href = "index.html">WEB</a></h1>
+  <input type="button" value='night' onclick="
+  nightDayHandler(this);
+ ">
+
+
+<div class="grid-container">
+  <div class="list">
+  <ol id="index">
+    <li><a href = "1.html">HTML</a></li>
+    <li><a href = "2.html">CSS</a></li>
+    <li><a href = "3.html">JavaScript</a></li>
+  </ol>
+</div>
+<div class="content">
+<div style="margin-left:10px;">
+  <h2>WEB</h2>
+  <p>The World Wide Web (abbreviated WWW or the Web) is an information space where documents and other web resources are identified by Uniform Resource Locators (URLs), interlinked by hypertext links, and can be accessed via the Internet.[1] English scientist Tim Berners-Lee invented the World Wide Web in 1989. He wrote the first web browser computer program in 1990 while employed at CERN in Switzerland.[2][3] The Web browser was released outside of CERN in 1991, first to other research institutions starting in January 1991 and to the general public on the Internet in August 1991.
+  </p>
+  <p>
+  <p style = "margin-top:45px;">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hkAvSt6cq74" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  </p>
+  </div>
+</div>
+<div class="rightindex" style="border-left:1px lightgray solid;">
+  <ol id="index">
+    <li><a href = "1.html">HTML</a></li>
+    <li><a href = "2.html">CSS</a></li>
+    <li><a href = "3.html">JavaScript</a></li>
+  </ol>
+</div>
+
+<div class="slider">
+  <!-- Slideshow container -->
+  <div style="font-size:20px; text-align:left; margin:10px; font-weight:bold;">
+    우리 가족 사진
+  </div>
+  <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 4</div>
+      <img class="slideimgs" src="img1.jpg">
+      <div class="text">뾰족턱</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 4</div>
+      <img class="slideimgs" src="img2.jpg">
+      <div class="text">왕만두</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <img class="slideimgs" src="img3.jpg">
+      <div class="text">먼산</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 4</div>
+      <img class="slideimgs" src="img4.jpg">
+      <div class="text">다인</div>
+    </div>
+
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" slideactive", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " slideactive";
+}
+</script>
+
+</div>
+<div class="testing">
+<script>
+
+  var coworkers = ["egoing", "leezche"];
+  document.write(coworkers[0]+'<br>')
+  coworkers.push('duru');
+  coworkers.push('taeho');
+  document.write(coworkers[2]);
+  document.write(coworkers.length+'<br>');
+  document.write(coworkers[0]);
+  var i=0;
+  while (i<3) {
+    document.write(coworkers[1]);
+    document.write(coworkers[2]);
+    i = i+1;
+  }
+  document.write(coworkers[3]);
+  document.write(i+"<br>");
+  var x=0;
+  while (x<coworkers.length) {
+    document.write('<li><a href="http://a.com/'+ coworkers[x]+'">'+coworkers[x]+"</a></li><br>");
+    x = x+1;
+  }  /*쿼리셀렉터 올에 대한 설명
+    쿼리셀렉터 올은 해당 태그에 대한 배열을 가져오는 것인데, 값은 태그 명이긴하나
+    실제 배열되어 있는 태그는 html 문서에 순서대로 있는 태그의 값들이다.*/
+  document.write('<li><a href = "'+coworkers[0]+'">'+coworkers[0]+'</a></li>');
+</script>
+</div>
+
+</body>
+</html>
