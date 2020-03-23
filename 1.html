@@ -63,7 +63,7 @@ toggler[i].addEventListener("click", function() {
 <div style="margin-left:10px;">
   <h2>HTML</h2>
   <p style="width:1000px">HTML 스터디 파일입니다.
-
+<p>
 HTML의 개념 정리
 
 HTML은 기본적으로 인터넷을 바탕으로 한 WEB 서비스에서 사용되는 언어이다. WEB 인터넷으로 정보전달을 할 수 있게 된 상황에서 그 정보들을 어떻게 표현하는 것인가에 대한 표현 방식이다.
@@ -80,7 +80,8 @@ HTML의 문법 정리
 
 HTML은 태그로 시작되어서 태그로 끝난다.
 그리고 각 태그는 속성기능이 있다.
-
+</p>
+<p>
 CSS
 
 CSS는 HTML안에 STYLE 태그 안에 위치함으로서 새로운 언어를 웹 브라우져가 HTML이 아닌 CSS로 이해하게한다. CSS는 HTML의 디자인을 구현하기 위함이라고 할 수 있다.
@@ -168,7 +169,7 @@ ol{
     border-bottom:none;
   }
 }
-
+</p>
 JAVASCRIPT
 자스 역시 html안에서 css와 같이 별도태그 내에서 작동하는 언어이다. css가 style 태그를 사용했다면, 자스는 script태그를 통해 해당 태그내에 자스언어를 통해 동작한다. 자스의 특징은 html과 css가 보여주는, 즉 express에 기능을 맞추었다면 자스는 유저와 상호작용을 할 수 있도록 설정되었다. 예를 들면 사용자가 특정한 버튼을 눌렀을 때 어떤식으로 동작할지 설정한다거나. 등등
 다만, 스크립트 안에서만 자스가 동작하는 것은 아니고,=“  html특정 태그의 attribute 내에 밸류로서 자스가 들어가야 하는 경우도 있다.
@@ -222,8 +223,8 @@ var coworkers = [“형욱”, “혜원”, “하율”];
 
 document.write(coworkers[1]); --> 혜원 출력 (이미 의미가 있는 배열값이기 때문에 문자열이 아니다)
 
-document.write(‘<li><a href = “2.html”>2html</a></li>’); --> 링크걸린 2html 출력 (html에 출력하는 값에 태그등 html언어가 있으니 html은 html언어로 받아들이기 때문이다.
-document.write(‘<li><a href = “’+coworkers[2]+’”>’+coworkers[2]+’</a></li>’);  -->하율링크 걸린 하율 출력
+document.write(‘li>a href = “2.html”>2html/a>/li>’); --> 링크걸린 2html 출력 (html에 출력하는 값에 태그등 html언어가 있으니 html은 html언어로 받아들이기 때문이다.
+document.write(‘li>a href = “’+coworkers[2]+’”>’+coworkers[2]+’/a>/li>’);  -->하율링크 걸린 하율 출력
 
 
 
